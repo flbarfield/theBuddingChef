@@ -1,0 +1,259 @@
+/* Font Sizes */
+* {
+    font-size: 62.5%;
+    background-color: rgb(150, 255, 171);
+    font-family: 'Aladin', cursive;
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+h1 {
+    font-size: 4.0rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2.6rem;
+}
+
+a, .aboutLeft button, .aboutRight input, .aboutLeft input, .aboutRight input, .aboutRight button {
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+}
+
+p {
+    font-size: 1.6rem;
+} 
+
+/* GENERAL */
+nav, nav > *, .aboutFinder, .aboutFinder > *, .recipeInfo, .aboutRight, .recipeInfoRight {
+    display: flex;
+}
+
+nav > *, .aboutFinder > *, .recipeInfo >*, .buttonsAndForms, .aboutRight {
+    flex-basis: 100%;
+}
+
+/* NAVIGATION */
+nav {
+    background-color: rgb(1, 37, 44);
+}
+
+nav h2 {
+    color: rgb(255, 255, 255);
+    background-color: rgb(1, 37, 44);
+}
+
+nav > * {
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(1, 37, 44);
+}
+
+nav img {
+    max-width: 683px;
+}
+
+nav li a, nav li {
+    list-style: none;
+    text-decoration: none;
+}
+
+nav ul {
+    gap: 1rem;
+}
+
+nav li {
+    background-color: rgb(42, 93, 76);
+    min-width: 20rem;
+    height: 3rem;
+    text-align: center;
+    padding-top: 0.7rem;
+}
+
+.selectedNav {
+    background-color: rgb(119, 199, 135);
+    color: white;
+}
+
+nav h2, nav li {
+    border-radius: 2%;
+}
+
+/* APP DESCRIPTION SECTION */
+.aboutRight, .aboutLeft, .aboutRight > *, .aboutLeft > * {
+    background-color: rgb(42, 93, 76);
+    color: white;
+}
+
+.aboutFinder {
+    background-color: rgb(150, 255, 171);
+    margin-top: 3rem;
+    justify-content: space-around;
+}
+
+.aboutLeft, .aboutRight {
+    flex-basis: 45%;
+    justify-content: space-around;
+    border-radius: 2%;
+    border: 2px solid white;
+}
+
+.aboutLeft {
+    flex-direction: column;
+    align-items:center;
+}
+
+.aboutLeft img {
+    max-width: 500px;
+    min-width: 200px;
+    margin-bottom: 20px;
+    border-radius: 1%;
+    border: thin solid white;
+}
+
+.recipeInfoRight {
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+}
+
+.aboutRight {
+    flex-direction: column;
+    align-items: center;
+}
+
+.appDescription {
+    font-size: 2.4rem;
+    flex-basis: 85%;
+    padding: 0 3rem;
+}
+
+.recipeInfo {
+    align-items: stretch;
+}
+
+
+/* BOTTOM SECTION, SEARCH FEATURES */
+
+.buttonsAndForms{
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    justify-content: center;
+}
+
+label {
+    font-size: 2.5rem;
+}
+
+#recipeButton, .ingredientButton, #hiddenIngredientButton  {
+    background-color: rgb(119, 199, 135);
+}
+
+#ingredientButton {
+    margin-bottom: 10px;
+}
+
+.aboutFinder input {
+    background: rgb(242, 242, 242);
+    text-align: center;
+    color: black;
+}
+
+#hiddenIngredientButton, #hiddenIngredientInput {
+    display: none;
+}
+
+.botRightButtons, .botLeftButtons {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2rem;
+}
+
+
+/* Toggle Hidden Ingredient Section */
+
+.recipeInfoLeft, .recipeInfoRight {
+    border: thin solid white;
+}
+
+.recipeInfo {
+    margin-top: 4.5rem;
+}
+
+.recipeInfoLeft, .recipeInfoLeft > *, .recipeInfoMid, .recipeInfoRight, .recipeInfoRight > *, .recipeInfoMid > * {
+    background-color: rgb(42, 93, 76);
+    color: white;
+}
+
+
+.scrollList li, #recipeIngredients, #recipeDirections {
+    background-color: rgb(42, 93, 76);
+    font-size: 2rem;
+}
+
+
+.recipeInfoRight, .recipeInfoLeft {
+    padding: 5rem;
+    overflow: scroll;
+    height: 50rem;
+}
+
+.recipeInfoRight img{
+    max-width: 80%;
+    margin: 0 auto;
+    border-radius: 2%;
+    /* border: thin solid white; */
+}
+
+
+
+/* SPECIAL HIDDEN FEATURE */
+.hidden {
+    display: none;
+}
+
+@media screen and (max-width: 1005px) {
+
+    /* NAVIGATION */
+    nav {
+        flex-direction: column;
+        flex-basis: 100%;
+    }
+
+    nav img {
+        justify-items:center;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    nav ul{
+        padding: 0 0 50px 0;
+        margin: 0 auto;
+    }
+    /* AboutFinder */
+    
+    #aboutLeftToHide {
+        display: none;
+    }
+
+    #hiddenIngredientButton, #hiddenIngredientInput {
+        display: block;
+    }
+
+   #recipeSearch {
+        margin-top: 2rem;
+   }
+
+   .aboutRight {
+        align-items: center;
+        flex-basis: 90%;
+   }
+
+   button {
+    margin-top: 1rem;
+   }
+
+}

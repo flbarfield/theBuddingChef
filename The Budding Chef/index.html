@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Budding Chef</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css\style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aladin&family=Source+Sans+3&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <img src="imagesToUse/cover.png" alt="">
+        <ul>
+            <h2>By Melanie Rosebud</h2>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Me</a></li>
+            <li class="selectedNav"><a href="#" >Recipe Finder</a></li>
+        </ul>
+    </nav>
+    <section class="aboutFinder">
+        <section id=aboutLeftToHide class="aboutLeft">
+            <h1>The Recipe Finder</h1>
+            <img src="imagesToUse\chef-demo-cooking-saucing-dish.jpg" alt="">
+            <section class="botLeftButtons">
+                <input type="text" name="" class="ingredientInput" id="ingredientInput" placeholder="Input an ingredient">
+                <button class="ingredientButton">Search Ingredient</button>
+            </section>
+        </section>
+        <section class="aboutRight">
+            <p class="appDescription">If you've ever looked in your fridge and groaned at the idea of eating the same exact thing for the fifteenth time in a row, try this tool instead! With it, you can enter any main ingredient, and with a quick search of our 143 dish databases, you'll get a slew of meal options to choose from!
+            <br><br>
+            If you're new to the site, give it a try! Go ahead and type "chicken" for a quick example in the left-hand box. Or just leave it blank to see all the available recipes! Once you have the name of a recipe, input that into the recipe box, and you'll have your directions!</p>
+            <input type="text" class="ingredientInput" name="" id="hiddenIngredientInput" placeholder="Input an ingredient">
+            <button class="ingredientButton" id="hiddenIngredientButton">Search Ingredient</button>
+            <section class="botRightButtons">
+                <input type="text" class='recipeInput'name="" id="recipeSearch" placeholder="Input a found recipe">
+                <button class='recipeButton' id="recipeButton">Search Recipe</button>
+            </section>
+        </section>
+    </section>
+    <section id="hideSection" class="recipeInfo hidden">
+        <section class="recipeInfoLeft scrollList">
+            <h3 id="resultNum">0 Items Found!</h3>
+            <ul id="recipeList">
+                <!--appending li elements via JS -->
+            </ul>
+        </section>
+
+        <section class="recipeInfoRight">
+            <h3 id="recipeTitle"></h3>
+            <img id='foodPic' src="" alt="">
+            <span id='recipeIngredients'></span>
+            <p id="recipeDirections"></p>    
+            <a id='videoLink' target="_blank" href=""></a>
+        </section>
+    </section>
+    <script type='text/javascript' src="js\main.js"></script>
+</body>
+</html>

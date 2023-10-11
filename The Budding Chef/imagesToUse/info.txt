@@ -1,0 +1,14 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: Aladin-Regular
+font link: https://fonts.google.com/specimen/Aladin
+font author: Sudtipos
+font author site: https://www.sudtipos.com/
+
+
+icon designer: Ben Cunningham
+icon designer link: /benjamincunningham96
+        
+{"bg":"#01252C","font":"#FFFFFF","icon":"#88DF95","slogan":"#ffffff"}
+      
